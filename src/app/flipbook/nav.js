@@ -40,10 +40,10 @@ export default function Nav() {
 
         {/* Contact Button */}
         <a 
-          href="#contact" 
+          href="https://anaika-5uqy.vercel.app/" 
           className="hidden md:inline-flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition"
         >
-          Contact Us
+            About Anaika
         </a>
 
         {/* Mobile Menu Button */}
@@ -79,14 +79,9 @@ export default function Nav() {
       {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
-          <nav className="flex flex-col gap-4 p-4 text-base">
-            <a href="/" onClick={() => setIsOpen(false)} className="hover:text-green-600 text-green-400" >Home</a>
-            <a onClick={(e) => scrollToSection(e, "workshop")} className="hover:text-green-600 text-green-400">Workshop</a>
-            <a onClick={(e) => scrollToSection(e, "showreel")} className="hover:text-green-600 text-green-400">Show Reels</a>
-            <a href="/gallery" onClick={() => setIsOpen(false)} className="hover:text-green-600 text-green-400">Gallery</a>
-            <a onClick={(e) => scrollToSection(e, "green-governance")} className="hover:text-green-600 text-green-400">Green Governance</a>
-            {/* <a href="#contact" className="bg-blue-500 text-white px-4 py-2 rounded-full text-center">Contact Us</a> */}
-          </nav>
+
+          
+
         </div>
       )}
     </header>
